@@ -56,8 +56,8 @@ const BondSection = () => {
           </motion.div>
           
           <p className="font-body text-lg text-muted-foreground">
-            Our connection proves that true relationships are built on love,
-            trust, and understanding – not just on meeting face to face. 💕
+            Our connection proves that true relationships are built on care,
+            trust, and understanding – not just on meeting face to face. 🌟
           </p>
         </MessageCard>
       </div>

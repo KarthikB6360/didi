@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-celebration.jpg";
+import heroImage from "@/assets/bhai-didi.jpg";
 
 const HeroSection = () => {
   return (
@@ -8,10 +8,10 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="New Year Celebration"
+          alt="Bhai and Didi Celebration"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background" />
       </div>
 
       {/* Content */}
@@ -23,7 +23,7 @@ const HeroSection = () => {
           className="mb-6"
         >
           <span className="font-script text-3xl md:text-4xl text-gold">
-            With all my love...
+            From Your Bhai...
           </span>
         </motion.div>
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            Didi!
+            2026, Didi!
           </motion.span>
         </motion.h1>
 
@@ -49,7 +49,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-body text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
         >
-          A heartfelt tribute from your loving Bhai 💖
+          A special tribute from your Bhai 🎉
         </motion.p>
 
         <motion.div

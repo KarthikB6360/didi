@@ -12,7 +12,7 @@ const SupportSection = () => {
           viewport={{ once: true }}
           className="font-display text-4xl md:text-5xl text-center mb-16 text-foreground"
         >
-          You Are My <span className="text-gradient-gold">Pillar of Strength</span>
+          You Are My <span className="text-gradient-gold">Favorite Didi</span>
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -38,7 +38,7 @@ const SupportSection = () => {
                 transition={{ duration: 1.5, repeat: Infinity }}
                 className="text-5xl mb-4"
               >
-                💪❤️
+                💪🌟
               </motion.div>
               <h3 className="font-display text-2xl md:text-3xl text-foreground">
                 Always By My Side

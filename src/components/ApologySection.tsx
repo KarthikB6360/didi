@@ -31,8 +31,8 @@ const ApologySection = () => {
           
           <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
             Didi, if I have ever done anything wrong or made any mistakes in
-            your life, I am truly sorry. Sometimes we hurt the ones we love the
-            most without even realizing it.
+            your life, I am truly sorry. Sometimes we hurt the ones we care about
+            the most without even realizing it.
           </p>
           
           <motion.div
@@ -49,8 +49,8 @@ const ApologySection = () => {
           </motion.div>
           
           <p className="font-body text-lg text-muted-foreground">
-            Your forgiveness and continued love mean the world to me.
-            I promise to be a better bhai in the new year! ❤️
+            Your forgiveness and continued support mean the world to me.
+            I promise to be a better bhai in the new year! 🤝
           </p>
         </MessageCard>
       </div>
