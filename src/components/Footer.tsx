@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <footer className="py-20 px-4 bg-gradient-to-b from-background to-secondary/30 relative overflow-hidden">
-      {/* Decorative hearts */}
+      {/* Decorative stars */}
       <div className="absolute inset-0 pointer-events-none">
         {Array.from({ length: 10 }).map((_, i) => (
           <motion.span
             key={i}
-            className="absolute text-rose/30"
+            className="absolute text-gold/30"
             style={{
               left: `${10 + i * 10}%`,
               top: `${20 + (i % 3) * 30}%`,
@@ -24,7 +24,7 @@ const Footer = () => {
               delay: i * 0.2
             }}
           >
-            ❤️
+            ✨
           </motion.span>
         ))}
       </div>
@@ -41,11 +41,11 @@ const Footer = () => {
             transition={{ duration: 1.5, repeat: Infinity }}
             className="text-6xl mb-6"
           >
-            💖
+            🌟
           </motion.div>
           
           <h2 className="font-script text-5xl md:text-7xl text-gradient-gold mb-6">
-            Love You Always, Didi!
+            You Are My Favorite Didi!
           </h2>
           
           <p className="font-body text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
@@ -62,13 +62,13 @@ const Footer = () => {
           className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg max-w-lg mx-auto"
         >
           <p className="font-display text-2xl text-foreground mb-4">
-            Happy New Year 2025!
+            Happy New Year 2026!
           </p>
           <p className="font-script text-3xl text-gold">
-            With lots of love,
+            With best wishes,
           </p>
           <p className="font-display text-2xl text-foreground mt-2">
-            Your Bhai ❤️
+            Your Bhai 🤝
           </p>
         </motion.div>
 
@@ -79,7 +79,7 @@ const Footer = () => {
           transition={{ delay: 0.5 }}
           className="mt-12 font-body text-muted-foreground"
         >
-          Made with 💕 just for you, Didi!
+          Made with care just for you, Didi! ✨
         </motion.p>
       </div>
     </footer>

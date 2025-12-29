@@ -6,7 +6,7 @@ const WishesSection = () => {
     "May all your dreams come true",
     "May you achieve all your goals",
     "May you be blessed with good health",
-    "May love and joy fill your life",
+    "May success and joy fill your life",
   ];
 
   return (
@@ -30,7 +30,7 @@ const WishesSection = () => {
           viewport={{ once: true }}
           className="font-body text-xl text-muted-foreground text-center mb-16"
         >
-          Here are my heartfelt wishes for you in 2025 💫
+          Here are my heartfelt wishes for you in 2026 ✨
         </motion.p>
 
         <div className="space-y-6">
