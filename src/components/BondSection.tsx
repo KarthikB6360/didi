@@ -34,9 +34,9 @@ const BondSection = () => {
           </h3>
           
           <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-            Until now, we have not met in person. We have never seen each other
-            face to face. But you know what, Didi? That has never mattered.
-            Our bond goes beyond physical presence.
+            We have met only a few times and had very few direct conversations.
+            But you know what, Didi? We have cherished every moment with fun
+            and spontaneous joy. Quality over quantity, always!
           </p>
           
           <motion.div
