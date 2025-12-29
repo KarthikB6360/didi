@@ -1,17 +1,83 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/bhai-didi.jpg";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Bhai and Didi Celebration"
-          className="w-full h-full object-cover"
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary to-background">
+        {/* Animated gradient orbs */}
+        <motion.div
+          className="absolute top-20 left-20 w-96 h-96 bg-gold/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.2, 1],
+            x: [0, 50, 0],
+            y: [0, 30, 0],
+          }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background" />
+        <motion.div
+          className="absolute bottom-20 right-20 w-80 h-80 bg-rose/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1.2, 1, 1.2],
+            x: [0, -40, 0],
+            y: [0, -50, 0],
+          }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.1, 1],
+            rotate: [0, 180, 360],
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+        />
+        
+        {/* Animated lines */}
+        {[...Array(5)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"
+            style={{
+              top: `${20 + i * 15}%`,
+              left: 0,
+              right: 0,
+            }}
+            animate={{
+              opacity: [0.3, 0.6, 0.3],
+              scaleX: [0.5, 1, 0.5],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              delay: i * 0.5,
+              ease: "easeInOut",
+            }}
+          />
+        ))}
+        
+        {/* Floating geometric shapes */}
+        {[...Array(8)].map((_, i) => (
+          <motion.div
+            key={`shape-${i}`}
+            className={`absolute w-4 h-4 border ${i % 2 === 0 ? 'border-gold/40 rotate-45' : 'border-rose/40 rounded-full'}`}
+            style={{
+              top: `${10 + (i * 10)}%`,
+              left: `${10 + (i * 10)}%`,
+            }}
+            animate={{
+              y: [0, -30, 0],
+              opacity: [0.4, 0.8, 0.4],
+              rotate: i % 2 === 0 ? [45, 90, 45] : [0, 360, 0],
+            }}
+            transition={{
+              duration: 5 + i,
+              repeat: Infinity,
+              delay: i * 0.3,
+              ease: "easeInOut",
+            }}
+          />
+        ))}
       </div>
 
       {/* Content */}
